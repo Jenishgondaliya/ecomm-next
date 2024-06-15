@@ -220,3 +220,4 @@ export default function Page({ params }: { params: { name: string } }) {
 }
 
 
+export const maxDuration = 300

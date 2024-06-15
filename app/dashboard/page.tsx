@@ -33,5 +33,6 @@ const Dashboard = async () => {
     </>
   );
 };
+export const maxDuration = 300
 
 export default Dashboard;

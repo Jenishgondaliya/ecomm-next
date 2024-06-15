@@ -90,7 +90,7 @@ const Navbar = () => {
         <>
           <Link
             href="/login"
-            className=" lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900"
+            className="lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-900"
           >
             Log in
           </Link>
