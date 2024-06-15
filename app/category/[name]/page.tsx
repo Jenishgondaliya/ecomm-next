@@ -6,6 +6,8 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import connectDB from "@/utils/db";
 import Product from "@/models/Product";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 export default function Page({ params }: { params: { name: string } }) {
   const array = [1, 2, 3, 4, 5, 6];
   const [name, setName] = useState("jenish");
@@ -23,7 +25,7 @@ export default function Page({ params }: { params: { name: string } }) {
   // })
   useEffect(()=>{
     const fetchData = async () => {
-      const response = await fetch("/api/product",{
+      const response = await fetch(`${apiUrl}/api/product`,{
         method:"POST",
         headers:{
           "Content-Type":"application/json"
@@ -42,7 +44,7 @@ export default function Page({ params }: { params: { name: string } }) {
   },[])
   const createOrderId = async () => {
     try {
-      const response = await fetch("/api/orders", {
+      const response = await fetch(`${apiUrl}/api/orders`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

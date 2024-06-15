@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import toast from "react-hot-toast";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const RegisterPage = () => {
   const [error, setError] = useState("");
@@ -46,7 +47,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const res = await fetch("/api/register", {
+      const res = await fetch(`${apiUrl}api/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
