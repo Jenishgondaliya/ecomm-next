@@ -10,7 +10,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
         toastOptions={{
           className: "",
           style: {
-            fontSize: "17px",
+            fontSize: "18px",
           },
         }}
       />
