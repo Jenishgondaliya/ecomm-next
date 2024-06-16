@@ -183,3 +183,5 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
+export const runtime = 'edge'
+

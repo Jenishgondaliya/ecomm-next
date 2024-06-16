@@ -215,3 +215,4 @@ const NextLoginPage = () => {
 };
 
 export default NextLoginPage;
+export const runtime = 'edge'
