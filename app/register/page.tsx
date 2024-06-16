@@ -11,7 +11,7 @@ const RegisterPage = () => {
   const [error, setError] = useState("");
   const router = useRouter();
   const { data: session, status: sessionStatus } = useSession();
-
+  
   useEffect(() => {
     if (sessionStatus === "authenticated") {
       router.replace("/dashboard");
