@@ -36,5 +36,4 @@ const Dashboard = async () => {
 export const maxDuration = 60
 
 export default Dashboard;
-export const runtime = 'edge'
 
