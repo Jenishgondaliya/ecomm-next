@@ -25,7 +25,7 @@ export default function Page({ params }: { params: { name: string } }) {
   // })
   useEffect(()=>{
     const fetchData = async () => {
-      const response = await fetch(`${apiUrl}/api/product`,{
+      const response = await fetch(`/api/product`,{
         method:"POST",
         headers:{
           "Content-Type":"application/json"
@@ -44,7 +44,7 @@ export default function Page({ params }: { params: { name: string } }) {
   },[])
   const createOrderId = async () => {
     try {
-      const response = await fetch(`${apiUrl}/api/orders`, {
+      const response = await fetch(`/api/orders`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
